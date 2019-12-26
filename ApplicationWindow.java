@@ -72,20 +72,12 @@ public class ApplicationWindow {
 		frame.getContentPane().setLayout(null);
 		ButtonGroup factorButtonsI = new ButtonGroup();
 		ButtonGroup buttongroupE = new ButtonGroup();
-		
-				
-		//																				BEGIN EXPENSE RADIO BUTTONS
-		
-
-		
+		//
 		JPanel transactionsPage = new JPanel();
 		transactionsPage.setBounds(0, 0, 1112, 668);
 		frame.getContentPane().add(transactionsPage);
 		transactionsPage.setLayout(null);
 		transactionsPage.setVisible(false);
-		
-			
-		
 
 		JPanel mainTitle_1 = new JPanel();
 		mainTitle_1.setBounds(0, 0, 1112, 668);
