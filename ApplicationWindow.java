@@ -72,12 +72,20 @@ public class ApplicationWindow {
 		frame.getContentPane().setLayout(null);
 		ButtonGroup factorButtonsI = new ButtonGroup();
 		ButtonGroup buttongroupE = new ButtonGroup();
-		//
+		
+				
+		//																				BEGIN EXPENSE RADIO BUTTONS
+		
+
+		
 		JPanel transactionsPage = new JPanel();
 		transactionsPage.setBounds(0, 0, 1112, 668);
 		frame.getContentPane().add(transactionsPage);
 		transactionsPage.setLayout(null);
 		transactionsPage.setVisible(false);
+		
+			
+		
 
 		JPanel mainTitle_1 = new JPanel();
 		mainTitle_1.setBounds(0, 0, 1112, 668);
@@ -467,13 +475,13 @@ public class ApplicationWindow {
 				String factor = " ";
 				try {
 					value = Double.parseDouble(inputExpense.getText());
-					if (annualBtn.isSelected()) {
+					if (annualExpense.isSelected()) {
 						factor = "annual";
-					} else if (biannualBtn.isSelected()) {
+					} else if (biannualExpense.isSelected()) {
 						factor = "biannually";
-					} else if (weeklyBtn.isSelected()) {
+					} else if (weeklyExpense.isSelected()) {
 						factor = "weekly";
-					} else if (dailyBtn.isSelected()) {
+					} else if (dailyExpense.isSelected()) {
 						factor = "daily";
 					} else {
 						factor = "monthly";
